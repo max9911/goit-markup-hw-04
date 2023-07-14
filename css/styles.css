@@ -178,7 +178,9 @@ button {
   position: relative;
 }
 .nav-list-item {
-  /**position: relative;**/
+}
+.active {
+  color: var(--link-hov-foc);
 }
 
 .nav-list-item.active::after {
@@ -337,8 +339,7 @@ button {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--mainbg);
 }
-.sec-three-img {
-}
+
 .sectreecont {
   padding: 32px 0px;
 }
@@ -365,9 +366,14 @@ button {
   justify-content: center;
   gap: 24px;
 }
-.secthreeiconbg {
+.secthreeiconlistitem {
   width: 40px;
   height: 40px;
+}
+
+.secthreeiconbg {
+  width: 100%;
+  height: 100%;
 
   background-color: var(--logo1color);
   border-radius: 50%;
@@ -375,7 +381,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /**padding: 12px 12px;**/
+
   gap: 24px;
 
   transition: background-color var(--hover-anim);
@@ -447,10 +453,8 @@ button {
 }
 .footer .container {
   display: flex;
- 
-  
+
   align-items: baseline;
-  
 }
 
 .footer-logo {
@@ -486,20 +490,16 @@ button {
 }
 
 .footer-par {
-  
   font-size: 16px;
   font-family: Roboto;
   font-style: normal;
   line-height: 1.5;
   width: 264px;
-  
 }
 .foot-one {
   margin-right: 120px;
 }
-.foot-two {
 
-}
 .footer-media {
   font-size: 16px;
   font-weight: 500;
@@ -510,13 +510,12 @@ button {
 }
 
 .footer-social {
- display: flex;
- gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 .fsocial-item {
   width: 40px;
   height: 40px;
-
 }
 .fsocial-link {
   width: 100%;
@@ -532,14 +531,12 @@ button {
 }
 .fsocial-link:hover,
 .fsocial-link:focus {
-
-  background-color: var(--socialnet-link-hover); 
+  background-color: var(--socialnet-link-hover);
 }
 
 .fsocial-icon {
   fill: #f4f4fd;
 }
-
 
 /** backdrop **/
 .backdrop.is-hidden {
@@ -551,8 +548,10 @@ button {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+
   width: 100%;
+  height: 100%;
+
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--hover-anim), visibility var(--hover-anim),
     pointer-events var(--hover-anim);
@@ -570,6 +569,7 @@ button {
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform var(--hover-anim);
 }
 .modal-close-btn {
   position: absolute;
@@ -660,11 +660,12 @@ button {
   transition: box-shadow var(--hover-anim);
 }
 
-
-
 .portf-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portf-item-link {
+  display: block;
 }
 .portf-item-wrap {
   position: relative;
