@@ -20,7 +20,6 @@ body {
   font-weight: 400;
   color: var(--maincolor);
   background-color: var(--mainbg);
- 
 }
 
 *,
@@ -107,7 +106,8 @@ button {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
   margin: 0 auto;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-cont {
   display: flex;
@@ -197,7 +197,7 @@ button {
 .hero {
   max-width: 1440px;
   margin: 0 auto;
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -206,7 +206,6 @@ button {
   padding-bottom: 188px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/hero.jpg);
-  
 }
 
 .hero-title {
@@ -280,9 +279,7 @@ button {
   border-radius: 4px;
   margin-bottom: 8px;
   background-color: var(--main-white);
-  
-  
-  
+
   /**padding: 24px 100px;**/
   display: flex;
   justify-content: center;
@@ -373,7 +370,7 @@ button {
 
   background-color: var(--logo1color);
   border-radius: 50%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,7 +378,7 @@ button {
   gap: 24px;
 
   transition: background-color var(--hover-anim);
-  cursor: pointer
+  cursor: pointer;
 }
 .secthreeiconbg:hover,
 .secthreeiconbg:focus {
@@ -389,8 +386,6 @@ button {
 }
 .secthreeicon {
   fill: #f4f4fd;
-
-  
 }
 /** section four**/
 .sec-four {
@@ -401,6 +396,7 @@ button {
   font-weight: 700;
   line-height: 1.11;
   text-align: center;
+  color: var(--main-blue);
   margin-bottom: 72px;
 }
 
@@ -411,6 +407,7 @@ button {
   gap: 24px;
   padding-bottom: 120px;
 }
+
 .client-link {
   display: flex;
   width: 168px;
@@ -520,14 +517,14 @@ button {
   pointer-events: none;
 }
 .backdrop {
-  
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--hover-anim), visibility var(--hover-anim), pointer-events var(--hover-anim);
+  transition: opacity var(--hover-anim), visibility var(--hover-anim),
+    pointer-events var(--hover-anim);
 }
 .modal {
   position: absolute;
@@ -555,13 +552,23 @@ button {
   justify-content: center;
   padding: 0;
   margin: 0;
-  background-color: #E7E9FC;
+  background-color: #e7e9fc;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: border var(--hover-anim), background-color var(--hover-anim);
 }
-
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--link-hov-foc);
+  border: none;
+}
 .modal-close-icon {
   stroke: rgba(46, 47, 66, 1);
+  transition: fill var(--hover-anim);
+}
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon {
+  fill: var(--mainbg);
 }
 
 /** portfolio **/
@@ -596,7 +603,8 @@ button {
 
 .scroll-btn:hover,
 .scroll-btn:focus {
- 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 
   background-color: var(--link-hov-foc);
   color: var(--mainbg);
@@ -618,24 +626,21 @@ button {
   line-height: 1.5;
 
   color: var(--maincolor);
-  transition:  box-shadow var(--hover-anim);
-
-  
-
-  
+  transition: box-shadow var(--hover-anim);
 }
-.portf-item:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
+
+
+.portf-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .portf-item-wrap {
- 
   position: relative;
   overflow: hidden;
-
-
 }
 .overlay-portf {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -644,16 +649,12 @@ button {
   color: var(--main-white);
   width: 100%;
   height: 100%;
-  
 
-
-
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.32px;
-transform: translateY(100%);
-transition: transform var(--hover-anim);
-
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  transform: translateY(100%);
+  transition: transform var(--hover-anim);
 }
 .portf-item:hover .overlay-portf {
   transform: translateY(0);
