@@ -107,6 +107,7 @@ button {
   border-bottom: 1px solid #e7e9fc;
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-cont {
   display: flex;
@@ -175,11 +176,15 @@ button {
   display: flex;
   position: relative;
 }
+.nav-list-item {
+  /**position: relative;**/
+}
+
 .nav-list-item.active::after {
   content: '';
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -190,8 +195,11 @@ button {
 /** hero**/
 
 .hero {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
 
   background-color: var(--main-blue);
   padding-top: 188px;
@@ -266,13 +274,19 @@ button {
   color: var(--maincolor);
 }
 
-.sec1iconcont {
+.sec-one-iconcont {
   width: 264px;
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
   background-color: var(--main-white);
-  padding: 24px 100px;
+  
+  
+  
+  /**padding: 24px 100px;**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /** sec two**/
@@ -322,13 +336,13 @@ button {
 }
 .sec-three-item {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229, 0px 1px 6px 0px #2e2f4214;
-  border-radius: 0px, 0px, 4px, 4px;
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--mainbg);
 }
 .sec-three-img {
 }
 .sectreecont {
-  padding: 32px 16px;
+  padding: 32px 0px;
 }
 
 .secthree-name {
@@ -350,25 +364,36 @@ button {
 
 .secthreeiconlist {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 .secthreeiconbg {
   width: 40px;
   height: 40px;
+
   background-color: var(--logo1color);
   border-radius: 50%;
-  display: block;
-  padding: 12px 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /**padding: 12px 12px;**/
   gap: 24px;
+
   transition: background-color var(--hover-anim);
+  cursor: pointer
 }
-.secthreeiconbg:hover {
+.secthreeiconbg:hover,
+.secthreeiconbg:focus {
   background-color: var(--socialnet-link-hover);
 }
 .secthreeicon {
+  fill: #f4f4fd;
+
+  
 }
 /** section four**/
-.four {
+.sec-four {
   margin: 0 auto;
 }
 .sec-four-title {
@@ -412,7 +437,7 @@ button {
 /** footer **/
 
 .footer {
-  width: 1440px;
+  max-width: 1440px;
 
   background-color: var(--main-blue);
 
@@ -510,7 +535,7 @@ button {
   left: 50%;
   transform: translatex(-50%) translatey(-50%);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   flex-shrink: 0;
   margin: 80px auto;
   border-radius: 4px;
@@ -534,6 +559,7 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.10);
 }
+
 .modal-close-icon {
   stroke: rgba(46, 47, 66, 1);
 }
