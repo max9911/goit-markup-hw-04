@@ -20,6 +20,7 @@ body {
   font-weight: 400;
   color: var(--maincolor);
   background-color: var(--mainbg);
+  max-width: 1440px;
 }
 
 *,
@@ -446,8 +447,10 @@ button {
 }
 .footer .container {
   display: flex;
-  gap: 269px;
-  justify-content: baseline;
+ 
+  
+  align-items: baseline;
+  
 }
 
 .footer-logo {
@@ -483,33 +486,61 @@ button {
 }
 
 .footer-par {
-  display: block;
-
-  position: absolute;
-  top: 140px;
-  left: 156px;
-
+  
   font-size: 16px;
   font-family: Roboto;
   font-style: normal;
   line-height: 1.5;
-
   width: 264px;
-  height: 72px;
+  
+}
+.foot-one {
+  margin-right: 120px;
+}
+.foot-two {
+
 }
 .footer-media {
   font-size: 16px;
-
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  color: var(--mainbg);
+  margin-bottom: 16px;
 }
 
-.footer .secthreeiconlist {
-  position: absolute;
-  top: 140px;
-  left: 540px;
+.footer-social {
+ display: flex;
+ gap: 16px;
 }
+.fsocial-item {
+  width: 40px;
+  height: 40px;
+
+}
+.fsocial-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo1color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color var(--hover-anim);
+  cursor: pointer;
+}
+.fsocial-link:hover,
+.fsocial-link:focus {
+
+  background-color: var(--socialnet-link-hover); 
+}
+
+.fsocial-icon {
+  fill: #f4f4fd;
+}
+
+
 /** backdrop **/
 .backdrop.is-hidden {
   opacity: 0;
