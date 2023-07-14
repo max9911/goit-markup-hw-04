@@ -14,7 +14,10 @@
       rel="stylesheet"
     />
     <!--normalize-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
     <!--css-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -25,8 +28,8 @@
         <nav class="nav">
           <a class="logo link" href="./index.html">Web<span class="logo-span">Studio</span></a>
           <ul class="list nav-list">
-            <li class="nav-list-link">
-              <a class="link nav-list-item" href="./index.html">Studio</a>
+            <li class="nav-list-link active">
+              <a class="link nav-list-item active" href="./index.html">Studio</a>
             </li>
             <li class="nav-list-link">
               <a class="link nav-list-item" href="./portfolio.html">Portfolio</a>
@@ -53,15 +56,20 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>Order Service</button>
         </div>
       </section>
       <!--section1-->
       <section class="section one">
-        <div class="container ">
+        <div class="container">
           <h2 class="visually-hidden">our benefits</h2>
           <ul class="list secone-list">
             <li class="sec-one-item">
+              <div class="sec1iconcont">
+                <svg class="sec1icon" width="64px" height="64px">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
               <h3 class="secone-title">Strategy</h3>
               <p class="secone-par">
                 Our goal is to identify the business problem to walk away with the perfect and
@@ -69,6 +77,11 @@
               </p>
             </li>
             <li class="sec-one-item">
+              <div class="sec1iconcont">
+                <svg class="sec1icon" width="64px" height="64px">
+                  <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3 class="secone-title">Punctuality</h3>
               <p class="secone-par">
                 Bring the key message to the brand's audience for the best price within the shortest
@@ -76,6 +89,11 @@
               </p>
             </li>
             <li class="sec-one-item">
+              <div class="sec1iconcont">
+                <svg class="sec1icon" width="64px" height="64px">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3 class="secone-title">Diligence</h3>
               <p class="secone-par">
                 Research and confirm brands that present the strongest digital growth opportunities
@@ -83,6 +101,11 @@
               </p>
             </li>
             <li class="sec-one-item">
+              <div class="sec1iconcont">
+                <svg class="sec1icon" width="64px" height="64px">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3 class="secone-title">Technologies</h3>
               <p class="secone-par">
                 Design practice focused on digital experiences. We bring forth a deep passion for
@@ -127,6 +150,28 @@
               <div class="sectreecont">
                 <h3 class="secthree-name">Mark Guerrero</h3>
                 <p class="secthree-par">Product Designer</p>
+                <ul class="secthreeiconlist">
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="sec-three-item">
@@ -140,6 +185,36 @@
               <div class="sectreecont">
                 <h3 class="secthree-name">Tom Ford</h3>
                 <p class="secthree-par">Frontend Developer</p>
+                <ul class="secthreeiconlist">
+                  <li>
+                    <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+                      <svg class="secthreeicon" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+                      <svg class="secthreeicon" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+                      <svg class="secthreeicon" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+                      <svg class="secthreeicon" width="16px" height="16px">
+                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="sec-three-item">
@@ -153,6 +228,28 @@
               <div class="sectreecont">
                 <h3 class="secthree-name">Camila Garcia</h3>
                 <p class="secthree-par">Marketing</p>
+                <ul class="secthreeiconlist">
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="sec-three-item">
@@ -166,22 +263,141 @@
               <div class="sectreecont">
                 <h3 class="secthree-name">Daniel Wilson</h3>
                 <p class="secthree-par">UI Designer</p>
+                <ul class="secthreeiconlist">
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="secthreeiconbg">
+                    <svg class="secthreeicon" width="16px" height="16px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!--section4-->
+    <section>
+      <div class="container">
+        <h2 class="sec-four-title">Our clients</h2>
+        <ul class="list sec-four-list">
+          <li>
+            <a class="client-link" href="" aria-label="logo1">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="client-link" href="" aria-label="logo2">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="client-link" href="" aria-label="logo3">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo3"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="client-link" href="" aria-label="logo4">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo4"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="client-link" href="" aria-label="logo5">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo5"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="client-link" href="" aria-label="logo6">
+              <svg class="client-icon" width="104px" height="56px">
+                <use href="./images/icons.svg#logo6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!--footer-->
     <footer class="footer">
       <div class="container">
-        <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-span">Studio</span></a
+        <a class="footer-logo link" href="./index.html"
+          >Web<span class="footer-logo-span">Studio</span></a
         >
         <p class="footer-par">
           Increase the flow of customers and sales for your business with digital marketing & growth
           solutions.
         </p>
+        <h3 class="footer-media">Social media</h3>
+        <ul class="secthreeiconlist">
+          <li>
+            <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+              <svg class="secthreeicon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+              <svg class="secthreeicon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+              <svg class="secthreeicon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="secthreeiconbg" href="" aria-label="socialnetwork">
+              <svg class="secthreeicon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
+
+    <!--modal win-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" >
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#modal-close-icon"></use>
+          </svg> 
+
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
