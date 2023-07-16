@@ -678,7 +678,10 @@ button {
   display: block;
   transition: box-shadow var(--hover-anim);
 }
-.portf-item-link:hover {
+.portf-item-link:hover,
+.portf-item-link:focus
+ {
+ 
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -703,7 +706,8 @@ button {
   transform: translateY(100%);
   transition: transform var(--hover-anim);
 }
-.portf-item:hover .overlay-portf {
+.portf-item-link:hover .overlay-portf,
+.portf-item-link:focus .overlay-portf {
   transform: translateY(0);
 }
 .name-container {
