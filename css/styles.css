@@ -68,7 +68,7 @@ button {
   line-height: 1.5;
 
   color: var(--main-blue);
-  transition: color var(--hover-anim), background-color var(--hover-anim);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:focus,
@@ -237,7 +237,7 @@ button {
 
   color: var(--mainbg);
   background: var(--logo1color);
-  transition: background-color var(--hover-anim);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -383,7 +383,7 @@ button {
 
   gap: 24px;
 
-  transition: background-color var(--hover-anim);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .secthreeiconbg:hover {
@@ -429,13 +429,13 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--lightgrey);
-  transition: border-color var(--hover-anim), color var(--hover-anim);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--lightgrey);
 
 }
 .client-icon {
   fill: currentColor;
-  transition: fill var(--hover-anim), color var(--hover-anim);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -539,7 +539,7 @@ button {
   justify-content: center;
   align-items: center;
 
-  transition: background-color var(--hover-anim);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .fsocial-link:hover,
@@ -560,8 +560,8 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--hover-anim), visibility var(--hover-anim),
-    pointer-events var(--hover-anim);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    pointer-events 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -582,7 +582,7 @@ button {
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition: transform var(--hover-anim);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   position: absolute;
@@ -599,7 +599,7 @@ button {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: border var(--hover-anim), background-color var(--hover-anim);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -608,7 +608,7 @@ button {
 }
 .modal-close-icon {
   stroke: rgba(46, 47, 66, 1);
-  transition: fill var(--hover-anim);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
@@ -642,7 +642,7 @@ button {
   letter-spacing: 0.04em;
   color: var(--logo1color);
   background-color: var(--main-white);
-  transition: background-color var(--hover-anim), color var(--hover-anim);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-btn:hover,
@@ -676,7 +676,7 @@ button {
 
 .portf-item-link {
   display: block;
-  transition: box-shadow var(--hover-anim);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-item-link:hover,
 .portf-item-link:focus
@@ -704,7 +704,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
   transform: translateY(100%);
-  transition: transform var(--hover-anim);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portf-item-link:hover .overlay-portf,
 .portf-item-link:focus .overlay-portf {
