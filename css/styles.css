@@ -20,7 +20,7 @@ body {
   font-weight: 400;
   color: var(--maincolor);
   background-color: var(--mainbg);
-  max-width: 1440px;
+  
 }
 
 *,
